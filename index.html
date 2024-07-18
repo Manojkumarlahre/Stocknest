@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Telegram Channel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to Our Telegram Channel</h1>
+        <form id="subscription-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telegram">Telegram Username:</label>
+            <input type="text" id="telegram" name="telegram" required>
+
+            <label for="subscription">Choose Subscription:</label>
+            <select id="subscription" name="subscription" required>
+                <option value="1000|1 month">1 Month - ₹1000</option>
+                <option value="2000|3 months">3 Months - ₹2000</option>
+                <option value="4000|6 months">6 Months - ₹4000</option>
+            </select>
+
+            <button type="button" onclick="payWithPayPal()">Subscribe</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
